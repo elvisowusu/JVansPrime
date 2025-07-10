@@ -57,7 +57,7 @@ export default function Navbar() {
                   bg-[#003E23] border-none text-white hover:bg-[#2e4b3e]
               `}
             >
-              Get Started
+              Contact Us
             </Button>
           </Link>
         </div>
