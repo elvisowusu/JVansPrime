@@ -11,8 +11,8 @@ export default function Footer() {
         <div className="mt-10 grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-12">
           {/* Logo */}
           <div className="space-y-2 lg:col-span-3">
-            <Image src="/assets/svgs/logo.svg" width={100} height={80} alt="accraTravelClub" />
-            <p className="text-sm max-w-60">Accra Travel Club</p>
+            <Image src="/assets/svgs/logo.svg" width={100} height={80} alt="JVANSLOGO" />
+            <p className="text-sm max-w-60">JVans Prime</p>
           </div>
 
           {/* Footer Sections */}
@@ -49,7 +49,7 @@ export default function Footer() {
 
         {/* Footer copyright */}
         <div className="mt-10 text-sm text-[#DFDFDF] text-center">
-          Copyright © 2024 Accra Travel Club. All Rights Reserved.
+          Copyright © 2024 JVans Prime. All Rights Reserved.
         </div>
       </div>
     </footer>

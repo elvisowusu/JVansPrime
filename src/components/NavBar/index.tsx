@@ -17,12 +17,12 @@ export default function Navbar() {
   return (
     <nav
       className={`w-full z-10 lg:py-4 font-poppins transition-colors duration-200 ${
-        isHomePage ? "bg-transparent text-white" : "bg-white text-black shadow-sm"
+        isHomePage ? "bg-black" : "text-black shadow-sm"
       }`}
     >
       <div className="max-width-wrapper flex justify-between items-center">
         <Link href={"/"}>
-          <Image src="/assets/svgs/logo.svg" width={100} height={80} alt="accraTravelClub" />
+          <Image src="/assets/svgs/logo.svg" width={100} height={80} alt="JVANSLOGO" />
         </Link>
 
         {/* nav links */}
@@ -50,16 +50,6 @@ export default function Navbar() {
 
         {/* nav buttons */}
         <div className="hidden items-center gap-2 sm:flex">
-          <Link href={"/login"}>
-            <Button
-              variant={"link"}
-              className={`cursor-pointer transition ease-out duration-180 ${
-                isHomePage ? "text-white hover:text-yellow-500" : "text-black hover:text-yellow-500"
-              }`}
-            >
-              Sign in
-            </Button>
-          </Link>
           <Link href={"/signup"}>
             <Button
               variant={"outline"}
@@ -67,7 +57,7 @@ export default function Navbar() {
                   bg-[#003E23] border-none text-white hover:bg-[#2e4b3e]
               `}
             >
-              Become a member
+              Get Started
             </Button>
           </Link>
         </div>
@@ -75,12 +65,12 @@ export default function Navbar() {
         {/* mobile menu */}
         <Sheet>
           <SheetTrigger className="sm:hidden border p-2 rounded-md">
-            <MenuIcon className={`w-6 h-6 ${isHomePage ? "text-white" : "text-black"}`} />
+            <MenuIcon className={`w-6 h-6 `} />
           </SheetTrigger>
           <SheetContent side="left" className="pl-7">
             <SheetHeader>
               <SheetTitle className="font-poppins text-sm text-left">
-                <Image src="/assets/svgs/logo.svg" width={80} height={70} alt="accraTravelClub" />
+                <Image src="/assets/svgs/logo.svg" width={80} height={70} alt="JVANSLOGO" />
               </SheetTitle>
 
               <div className="flex flex-col items-start gap-4 pt-16">
@@ -100,24 +90,15 @@ export default function Navbar() {
                     </SheetClose>
                   );
                 })}
-                <Link href={"/login"}>
-                  <Button
-                    variant={"outline"}
-                    className={`rounded-full mt-40 h-12 w-44 cursor-pointer hover:text-white 
-                  bg-[#003E23] border-none text-white hover:bg-[#2e4b3e]
-              `}
-                  >
-                    Sign in
-                  </Button>
-                </Link>
+                
                 <Link href={"/signup"}>
                   <Button
                     variant={"outline"}
-                    className={`rounded-full h-12 w-44 cursor-pointer hover:text-white 
+                    className={`rounded-full mt-50 h-12 w-44 cursor-pointer hover:text-white 
                   bg-[#003E23] border-none text-white hover:bg-[#2e4b3e]
               `}
                   >
-                    Become a member
+                    Get Started
                   </Button>
                 </Link>
               </div>
